@@ -1,0 +1,21 @@
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title> Index </title> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">                      
+    </head> 
+    <body></br></br></br></br></br> 
+        <div align="center"> 
+          <div align="center" class="border"> 
+             <div class="header"> 
+                <h1 class="word">Index</h1> 
+             </div></br></br></br> 
+                <h1 class="bottom"> 
+                     Hi {{session.username}}!!</br></br> Take Your Video Here... Close before than click dowload
+                <a href="{{url_for('filterimage') }}"></a>                
+                </h1></br></br></br> 
+                <a href="{{ url_for('logout') }}" class="btn">Download</a> 
+          </div> 
+        </div> 
+    </body> 
+</html> 
